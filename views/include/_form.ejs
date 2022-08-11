@@ -1,0 +1,39 @@
+ <!-- form handling -->
+ <form action="/api/news" method="POST" id="add_news" enctype="multipart/form-data">
+    <div class="new_news">
+
+        <div class="form-group">
+            <label for="img" class="text-light">Resim Seç : </label>
+            <input type="file" id="img" name="img"  accept="image/*"/><br />
+        </div>
+
+        <div class="form-group">
+            <label for="title" class="text-light">Haber Başlık : </label>
+            <input type="text" name="title" value="" placeholder="Başlık Giriniz">
+        </div>
+
+
+        <div class="form-group">
+            <label for="subTitle" class="text-light">Haber Altbaşlık : </label>
+            <input type="text" name="subTitle" value="" placeholder="Altbaşlık Giriniz">
+        </div>
+
+        <div class="form-group">
+            <label for="textarea" class="text-light">Haber Metni : </label>
+            <textarea id="textarea" name="textarea" rows="5" cols="50"></textarea>
+
+        </div>
+
+        <div class="form-group">
+            <label for="date" class="text-light">Haber Tarihi : </label>
+            <input type="date" name="date" value="" placeholder="Tarih Giriniz">
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit"  class="btn text-dark update">Kaydet</button>
+        </div>
+
+    </div>
+
+</form>
